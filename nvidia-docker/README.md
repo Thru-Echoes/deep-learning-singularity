@@ -1,6 +1,6 @@
 # Running GPU TensorFlow in Singularity Containers using NVIDIA's Docker containers
 
-Since this is coming from NVIDIA instead of the normal Docker registry, we need to do a few additional steps to get it into Singularity. On your own machine, you will need to set up your own Docker registry.
+Since this is coming from NVIDIA instead of the normal Docker registry, we need to do a few additional steps to get it into Singularity. On your own machine, you will need to set up your own Docker registry. You need to do this on a computer on which you have `sudo` access and then transfer the final Singularity image to Savio.
 
 ```bash
 docker run -d -p 5000:5000 --name registry registry:2 # Start your local registry
