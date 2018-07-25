@@ -10,4 +10,4 @@ docker push localhost:5000/tensorflow # Push the container to your local registr
 sudo SINGULARITY_NOHTTPS=true singularity build tensorflow-gpu-savio.simg TensorFlowGPU_savio
 
 # Run the Singularity container (probably after moving it to the cluster)
-singularity run --nv tensorflow-gpu-savio.simg
+singularity run --nv tensorflow-gpu-savio.simg $YOUR_PYTHON_SCRIPT
